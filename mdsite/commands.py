@@ -154,7 +154,7 @@ class Commands:
                     sys.stdout.write("* %s saved.\n" % md)
                 sleep(5)
         # Update caches.
-        folders, files = make_nav_cache(mds)
+        sys.stdout.write("Better run the update-caches command as well. Bye.\n")
         sys.exit()
     
     def update_caches(self):
