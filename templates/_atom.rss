@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://www.example.com/atom</id>
+    <title>www.example.com ATOM Feed</title>
+    <link type="text/html" rel="alternate" href="http://www.example.com" />
+    <link type="application/atom+xml" rel="self" href="http://www.example.com/atom" />{% if info.timestamp %}
+    <updated>{{ info.timestamp }}</updated>{% endif %}{% for entry in entries %}
+    <entry>
+        <id>http://www.example.com/{{ entry.path }}</id>
+        <title>{{ entry.title }}</title>
+        <content>{{ entry.description }}</content>
+        <link type="text/html" rel="alternate" href="http://www.example.com/{{ entry.path }}" />{% if entry.timestamp %}
+        <updated>{{ entry.timestamp }}</updated>{% endif %}
+        <author>
+            <name>John Doe</name>
+        </author>
+    </entry>{% endfor %}
+</feed>

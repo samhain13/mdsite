@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://www.example.com/atom</id>
+    <title>www.example.com ATOM Feed</title>
+    <link type="text/html" rel="alternate" href="http://www.example.com" />
+    <link type="application/atom+xml" rel="self" href="http://www.example.com/atom" />
+    <updated>2015-12-31T20:33:20Z</updated>
+    <entry>
+        <id>http://www.example.com/page1</id>
+        <title>Generic, Untitled Page</title>
+        <content>No description available.</content>
+        <link type="text/html" rel="alternate" href="http://www.example.com/page1" />
+        <author>
+            <name>John Doe</name>
+        </author>
+    </entry>
+    <entry>
+        <id>http://www.example.com/page2</id>
+        <title>Generic, Untitled Page</title>
+        <content>No description available.</content>
+        <link type="text/html" rel="alternate" href="http://www.example.com/page2" />
+        <author>
+            <name>John Doe</name>
+        </author>
+    </entry>
+    <entry>
+        <id>http://www.example.com/page3</id>
+        <title>Generic, Untitled Page</title>
+        <content>No description available.</content>
+        <link type="text/html" rel="alternate" href="http://www.example.com/page3" />
+        <author>
+            <name>John Doe</name>
+        </author>
+    </entry>
+</feed>
