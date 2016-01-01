@@ -41,7 +41,7 @@ class Commands:
         self.args = ap.parse_args()
     
     def _make_stamps(self):
-        d = datetime.now()
+        d = datetime.utcnow()
         ts = d.strftime("%Y-%m-%dT%H:%M:%SZ")
         ds = d.strftime("%A, %d %B %Y - %H:%M:%S")
         return ts, ds
