@@ -108,10 +108,8 @@ class Commands:
                 page[k] = u"%s%s" % (kq, raw_input(kq).decode("utf-8"))
         with open(self.args.path, "w") as f:
             f.write(u"\n".join([page[x] for x in page_keys]).encode("utf-8"))
-        # Update the directory's _nav_cache and the site feed.
-        folders, files = \
-            make_nav_cache(os.path.abspath(os.path.dirname(self.args.path)))
-        sys.stdout.write("Page has been saved. Goodbye.\n")
+        sys.stdout.write("%s has been saved.\n" % self.args.path)
+        sys.stdout.write("Better run the update-caches command as well. Bye.\n")
         sys.exit()
     
     def make_series(self):
@@ -164,6 +162,12 @@ class Commands:
         
         Requires:
             --path - path to the site's markdown directory
+        
+        Optional:
+            --directrory - path to the templates directory; causes
+                           update-feed to be called as well
+            --limit <int>  maximum number of entries to include; works only
+                           if --directory is supplied
         """
         self._check_args("path")
         for dirname, subdirs, files in os.walk(self.args.path):
@@ -171,6 +175,8 @@ class Commands:
                 sys.stdout.write("* Updating _nav_cache at %s\n" % dirname)
                 make_nav_cache(dirname)
         sys.stdout.write("_nav_cache files have been saved.\n")
+        if self.args.directory:
+            self.update_feed()
         sys.exit()
     
     def update_feed(self):
