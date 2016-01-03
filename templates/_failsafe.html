@@ -11,5 +11,23 @@
     <body>
         <h1>{{ page.title }}</h1>
         {% if page.body %}{{ page.body|safe }}{% endif %}
+        <nav>
+            {% if up_level %}
+                <h2>Parent</h2>
+                <a href="/{{ up_level.path }}">{{ up_level.title }}</a>
+            {% endif %}
+            {% if folders %}
+                <h2>Folders</h2>
+                {% for f in folders %}
+                <a href="/{{ f.path }}">{{ f.title }}</a><br />
+                {% endfor %}
+            {% endif %}
+            {% if files %}
+                <h2>Files</h2>
+                {% for f in files %}
+                <a href="/{{ f.path }}">{{ f.title }}</a><br />
+                {% endfor %}
+            {% endif %}
+        </nav>
     </body>
 </html>
