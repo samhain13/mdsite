@@ -4,30 +4,33 @@
     <title>www.example.com ATOM Feed</title>
     <link type="text/html" rel="alternate" href="http://www.example.com" />
     <link type="application/atom+xml" rel="self" href="http://www.example.com/atom" />
-    <updated>2015-12-31T20:33:20Z</updated>
+    <updated>2015-12-16T11:28:37Z</updated>
     <entry>
         <id>http://www.example.com/page1</id>
-        <title>Generic, Untitled Page</title>
-        <content>No description available.</content>
+        <title>Here be Page 1</title>
+        <content>Just a test page.</content>
         <link type="text/html" rel="alternate" href="http://www.example.com/page1" />
+        <updated>2015-12-16T11:28:37Z</updated>
         <author>
             <name>John Doe</name>
         </author>
     </entry>
     <entry>
         <id>http://www.example.com/page2</id>
-        <title>Generic, Untitled Page</title>
-        <content>No description available.</content>
+        <title>Here be Page 2</title>
+        <content>Just a test page.</content>
         <link type="text/html" rel="alternate" href="http://www.example.com/page2" />
+        <updated>2015-12-16T11:28:37Z</updated>
         <author>
             <name>John Doe</name>
         </author>
     </entry>
     <entry>
         <id>http://www.example.com/page3</id>
-        <title>Generic, Untitled Page</title>
-        <content>No description available.</content>
+        <title>Here be Page 3</title>
+        <content>Just a test page.</content>
         <link type="text/html" rel="alternate" href="http://www.example.com/page3" />
+        <updated>2015-12-16T11:28:37Z</updated>
         <author>
             <name>John Doe</name>
         </author>

@@ -1,11 +1,11 @@
-Title: Arielle B Cruz's Art Portfolio
-Description: Something to the effect that will get us a timestamp.
-Keywords: keywords, key phrases
-Timestamp: 2015-12-31T20:33:20Z
-Date: Thursday, 31 December 2015 - 20:33:20
+Title: Here be a MDSite Index
+Description: Just a test index page.
+Keywords: mdsite, sample, test
+Timestamp: 2015-12-16T11:28:37Z
+Date: Wednesday, 16 December 2015 - 11:28:37
 Template: 
 Image: 
 Body:
-## Here Be Dragons...
+## Markdown actually starts here
 
-...no, not really— because I don't draw a lot of dragons.
+The markdown actually starts here.
